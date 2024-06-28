@@ -49,7 +49,7 @@ const ProjectsSection = () => {
                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className="md:w-1/2">
                     <Link href={project.link}>
-                      <Image
+                      <Image unoptimized
                         src={project.image}
                         alt=""
                         width={1000}
