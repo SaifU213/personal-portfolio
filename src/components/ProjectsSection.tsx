@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import SlideUp from "./SlideUp";
+import { prefix } from "@/util/prefix";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import { SiDevpost } from "react-icons/si";
 
@@ -10,7 +11,7 @@ const projects = [
     name: "KinderKare",
     description:
       "My capstone project for a daycare management application for owners, parents and staff using the MERN full-stack.",
-    image: "../../public/kinderkare.png",
+    image: "/kinderkare.png",
     github: "https://github.com/SaifU213/KinderKare",
     link: "https://github.com/SaifU213/KinderKare",
   },
@@ -18,7 +19,7 @@ const projects = [
     name: "Music Database",
     description:
       "A full-stack application using React, Node and MySQL to modify and store music, playlists and albums.",
-    image: "../../public/musicdb.png",
+    image: "/musicdb.png",
     github: "https://github.com/SaifU213/Music-Database",
     link: "https://github.com/SaifU213/Music-Database",
   },
@@ -26,7 +27,7 @@ const projects = [
     name: "FaceIT",
     description:
       "A face recognition party game using emojis and Google Cloud's face detection API. Awarded Best Use of Google Cloud at Hack Western 8.",
-    image: "../../public/faceit.png",
+    image: "/faceit.png",
     github: "https://github.com/LoJJoS",
     devpost: "https://devpost.com/software/faceit-xipj7u",
     link: "https://devpost.com/software/faceit-xipj7u",
@@ -49,8 +50,8 @@ const ProjectsSection = () => {
                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className="md:w-1/2">
                     <Link href={project.link}>
-                      <img 
-                        src={project.image}
+                      <Image
+                        src={`${prefix}${project.image}`}
                         alt=""
                         width={1000}
                         height={1000}

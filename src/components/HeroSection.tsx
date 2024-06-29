@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { prefix } from "@/util/prefix";
 import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
 
@@ -10,9 +11,9 @@ const HeroSection = () => {
     <section id="home">
       <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
         <div className="md:mt-2 md:w-1/2">
-          <img 
+          <Image 
             className="rounded-full shadow-2xl"
-            src="../../public/headshot.png"
+            src={`${prefix}/headshot.png`}
             alt=""
             width={325}
             height={325}
