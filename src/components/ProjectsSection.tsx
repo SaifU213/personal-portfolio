@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import SlideUp from "./SlideUp";
-import { prefix } from "@/util/prefix";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import { SiDevpost } from "react-icons/si";
 
@@ -51,7 +50,7 @@ const ProjectsSection = () => {
                   <div className="md:w-1/2">
                     <Link href={project.link}>
                       <Image
-                        src={`${prefix}${project.image}`}
+                        src={project.image}
                         alt=""
                         width={1000}
                         height={1000}

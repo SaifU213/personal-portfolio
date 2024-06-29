@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import { prefix } from "@/util/prefix";
 import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
 
@@ -13,7 +12,7 @@ const HeroSection = () => {
         <div className="md:mt-2 md:w-1/2">
           <Image 
             className="rounded-full shadow-2xl"
-            src={`${prefix}/headshot.png`}
+            src="/headshot.png"
             alt=""
             width={325}
             height={325}
