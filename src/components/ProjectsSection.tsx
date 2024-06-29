@@ -10,7 +10,7 @@ const projects = [
     name: "KinderKare",
     description:
       "My capstone project for a daycare management application for owners, parents and staff using the MERN full-stack.",
-    image: "/kinderkare.png",
+    image: "../../public/kinderkare.png",
     github: "https://github.com/SaifU213/KinderKare",
     link: "https://github.com/SaifU213/KinderKare",
   },
@@ -18,7 +18,7 @@ const projects = [
     name: "Music Database",
     description:
       "A full-stack application using React, Node and MySQL to modify and store music, playlists and albums.",
-    image: "/musicdb.png",
+    image: "../../public/musicdb.png",
     github: "https://github.com/SaifU213/Music-Database",
     link: "https://github.com/SaifU213/Music-Database",
   },
@@ -26,7 +26,7 @@ const projects = [
     name: "FaceIT",
     description:
       "A face recognition party game using emojis and Google Cloud's face detection API. Awarded Best Use of Google Cloud at Hack Western 8.",
-    image: "/faceit.png",
+    image: "../../public/faceit.png",
     github: "https://github.com/LoJJoS",
     devpost: "https://devpost.com/software/faceit-xipj7u",
     link: "https://devpost.com/software/faceit-xipj7u",
