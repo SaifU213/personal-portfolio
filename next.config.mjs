@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
+
+
 const nextConfig = {
+  basePath: "/personal-portfolio",
   output: "export",
   distDir: "dist",
   images: {
