@@ -4,10 +4,6 @@ import React from "react";
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
-// import getConfig from "next/config";
-
-// const { publicRuntimeConfig } = getConfig()
-const basePath = ''
 
 const HeroSection = () => {
   return (
@@ -16,7 +12,7 @@ const HeroSection = () => {
         <div className="md:mt-2 md:w-1/2">
           <Image 
             className="rounded-full shadow-2xl"
-            src={`${basePath}/headshot.png`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/headshot.png`}
             alt=""
             width={325}
             height={325}

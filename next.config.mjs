@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 
 const isProd = process.env.NODE_ENV === "production";
-const basePath = isProd ? "/personal-portfolio" : "";
+process.env.NEXT_PUBLIC_BASE_PATH = isProd ? "/personal-portfolio" : ""
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
 
 // console.log(`isProd: ${isProd}`);
 // console.log(`NODE_ENV: ${process.env.NODE_ENV}`);
@@ -9,7 +10,7 @@ const basePath = isProd ? "/personal-portfolio" : "";
 // console.log(`basePath: ${basePath}`);
 
 const nextConfig = {
-  basePath: isProd ? "/personal-portfolio" : "",
+  basePath: basePath,
   assetPrefix: isProd ? "/personal-portfolio" : "",
   output: "export",
   distDir: "dist",

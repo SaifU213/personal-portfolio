@@ -4,18 +4,13 @@ import Link from "next/link";
 import SlideUp from "./SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import { SiDevpost } from "react-icons/si";
-// import getConfig from "next/config";
-
-// const { publicRuntimeConfig } = getConfig()
-
-const basePath = ''
 
 const projects = [
   {
     name: "KinderKare",
     description:
       "My capstone project for a daycare management application for owners, parents and staff using the MERN full-stack.",
-    image: `${basePath}/kinderkare.png`,
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH}/kinderkare.png`,
     github: "https://github.com/SaifU213/KinderKare",
     link: "https://github.com/SaifU213/KinderKare",
   },
@@ -23,7 +18,7 @@ const projects = [
     name: "Music Database",
     description:
       "A full-stack application using React, Node and MySQL to modify and store music, playlists and albums.",
-    image: `${basePath}/musicdb.png`,
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH}/musicdb.png`,
     github: "https://github.com/SaifU213/Music-Database",
     link: "https://github.com/SaifU213/Music-Database",
   },
@@ -31,7 +26,7 @@ const projects = [
     name: "FaceIT",
     description:
       "A face recognition party game using emojis and Google Cloud's face detection API. Awarded Best Use of Google Cloud at Hack Western 8.",
-    image: `${basePath}/faceit.png`,
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH}/faceit.png`,
     github: "https://github.com/LoJJoS",
     devpost: "https://devpost.com/software/faceit-xipj7u",
     link: "https://devpost.com/software/faceit-xipj7u",
