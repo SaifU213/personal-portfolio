@@ -15,7 +15,6 @@ const nextConfig = {
   distDir: "dist",
   images: {
     unoptimized: true,
-    path: isProd ? "https://saifu213.github.io/personal-portfolio/" : "/",
   },
   publicRuntimeConfig: {
     basePath,
