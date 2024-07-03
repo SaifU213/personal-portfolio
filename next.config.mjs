@@ -9,16 +9,13 @@ const basePath = isProd ? "/personal-portfolio" : "";
 // console.log(`basePath: ${basePath}`);
 
 const nextConfig = {
-  basePath,
+  basePath: isProd ? "/personal-portfolio" : "",
   assetPrefix: isProd ? "/personal-portfolio" : "",
   output: "export",
   distDir: "dist",
   images: {
     unoptimized: true,
     path: isProd ? "https://saifu213.github.io/personal-portfolio/" : "/",
-  },
-  publicRuntimeConfig: {
-    basePath,
   },
 };
 
