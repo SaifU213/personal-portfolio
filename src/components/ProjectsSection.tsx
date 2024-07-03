@@ -4,13 +4,16 @@ import Link from "next/link";
 import SlideUp from "./SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import { SiDevpost } from "react-icons/si";
+import getConfig from "next/config";
+
+const { publicRuntimeConfig } = getConfig()
 
 const projects = [
   {
     name: "KinderKare",
     description:
       "My capstone project for a daycare management application for owners, parents and staff using the MERN full-stack.",
-    image: "/kinderkare.png",
+    image: `${publicRuntimeConfig.basePath}/kinderkare.png`,
     github: "https://github.com/SaifU213/KinderKare",
     link: "https://github.com/SaifU213/KinderKare",
   },
@@ -18,7 +21,7 @@ const projects = [
     name: "Music Database",
     description:
       "A full-stack application using React, Node and MySQL to modify and store music, playlists and albums.",
-    image: "/musicdb.png",
+    image: `${publicRuntimeConfig.basePath}/musicdb.png`,
     github: "https://github.com/SaifU213/Music-Database",
     link: "https://github.com/SaifU213/Music-Database",
   },
@@ -26,7 +29,7 @@ const projects = [
     name: "FaceIT",
     description:
       "A face recognition party game using emojis and Google Cloud's face detection API. Awarded Best Use of Google Cloud at Hack Western 8.",
-    image: "/faceit.png",
+    image: `${publicRuntimeConfig.basePath}/faceit.png`,
     github: "https://github.com/LoJJoS",
     devpost: "https://devpost.com/software/faceit-xipj7u",
     link: "https://devpost.com/software/faceit-xipj7u",
