@@ -4,13 +4,14 @@ import Link from 'next/link';
 import SlideUp from './SlideUp';
 import { BsGithub, BsArrowUpRightSquare } from 'react-icons/bs';
 import { SiDevpost } from 'react-icons/si';
+import { basePath } from 'next.config.js';
 
 const projects = [
 	{
 		name: 'Multithreaded Client-Server',
 		description:
 			'A multithreaded client-server app using POSIX threads and sockets. Implemented in docker Linux using C.',
-		image: `/gftransfer.png`,
+		image: `${basePath}/gftransfer.png`,
 		github: 'https://github.com/SaifU213/Multithreaded-Client-Server',
 		link: 'https://github.com/SaifU213/Multithreaded-Client-Server',
 	},
@@ -18,7 +19,7 @@ const projects = [
 		name: 'KinderKare',
 		description:
 			'My capstone project for a daycare management application for owners, parents and staff using the MERN full-stack.',
-		image: `/kinderkare.png`,
+		image: `${basePath}/kinderkare.png`,
 		github: 'https://github.com/SaifU213/KinderKare',
 		link: 'https://github.com/SaifU213/KinderKare',
 	},
@@ -26,7 +27,7 @@ const projects = [
 		name: 'Music Database',
 		description:
 			'A full-stack application using React, Node and MySQL to modify and store music, playlists and albums.',
-		image: `/musicdb.png`,
+		image: `${basePath}/musicdb.png`,
 		github: 'https://github.com/SaifU213/Music-Database',
 		link: 'https://github.com/SaifU213/Music-Database',
 	},
@@ -34,7 +35,7 @@ const projects = [
 		name: 'FaceIT',
 		description:
 			"A face recognition party game using emojis and Google Cloud's face detection API. Awarded Best Use of Google Cloud at Hack Western 8.",
-		image: `/faceit.png`,
+		image: `${basePath}/faceit.png`,
 		github: 'https://github.com/LoJJoS',
 		devpost: 'https://devpost.com/software/faceit-xipj7u',
 		link: 'https://devpost.com/software/faceit-xipj7u',
@@ -62,6 +63,7 @@ const ProjectsSection = () => {
 												alt=""
 												width={1000}
 												height={1000}
+												bg-white
 												className="rounded-xl shadow-xl hover:opacity-70"
 											/>
 										</Link>
