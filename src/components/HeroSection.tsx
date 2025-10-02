@@ -24,14 +24,14 @@ const HeroSection = () => {
 						Hi, I&apos;m Saif
 					</h1>
 					<p className="text-lg mt-4 mb-6 md:text-2xl">
-						I&apos;m a
+						I&apos;m a{' '}
 						<span className="font-semibold text-purple-700">
 							Computer Science Student
-						</span>
-						and a
+						</span>{' '}
+						and a{' '}
 						<span className="font-semibold text-purple-700">
 							Software Engineer
-						</span>
+						</span>{' '}
 						based in Toronto, ON. Aspiring to create software that makes life
 						easier and more meaningful.
 					</p>
