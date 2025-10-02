@@ -10,7 +10,7 @@ const projects = [
 		name: 'Multithreaded Client-Server',
 		description:
 			'A multithreaded client-server app using POSIX threads and sockets. Implemented in docker Linux using C.',
-		image: `${process.env.NEXT_PUBLIC_BASE_PATH}/gftransfer.png`,
+		image: `/gftransfer.png`,
 		github: 'https://github.com/SaifU213/Multithreaded-Client-Server',
 		link: 'https://github.com/SaifU213/Multithreaded-Client-Server',
 	},
@@ -18,7 +18,7 @@ const projects = [
 		name: 'KinderKare',
 		description:
 			'My capstone project for a daycare management application for owners, parents and staff using the MERN full-stack.',
-		image: `${process.env.NEXT_PUBLIC_BASE_PATH}/kinderkare.png`,
+		image: `/kinderkare.png`,
 		github: 'https://github.com/SaifU213/KinderKare',
 		link: 'https://github.com/SaifU213/KinderKare',
 	},
@@ -26,7 +26,7 @@ const projects = [
 		name: 'Music Database',
 		description:
 			'A full-stack application using React, Node and MySQL to modify and store music, playlists and albums.',
-		image: `${process.env.NEXT_PUBLIC_BASE_PATH}/musicdb.png`,
+		image: `/musicdb.png`,
 		github: 'https://github.com/SaifU213/Music-Database',
 		link: 'https://github.com/SaifU213/Music-Database',
 	},
@@ -34,7 +34,7 @@ const projects = [
 		name: 'FaceIT',
 		description:
 			"A face recognition party game using emojis and Google Cloud's face detection API. Awarded Best Use of Google Cloud at Hack Western 8.",
-		image: `${process.env.NEXT_PUBLIC_BASE_PATH}/faceit.png`,
+		image: `/faceit.png`,
 		github: 'https://github.com/LoJJoS',
 		devpost: 'https://devpost.com/software/faceit-xipj7u',
 		link: 'https://devpost.com/software/faceit-xipj7u',
@@ -62,7 +62,6 @@ const ProjectsSection = () => {
 												alt=""
 												width={1000}
 												height={1000}
-												bg-white
 												className="rounded-xl shadow-xl hover:opacity-70"
 											/>
 										</Link>

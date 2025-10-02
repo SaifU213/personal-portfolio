@@ -1,9 +1,9 @@
-"use client"
+'use client';
 
-import Footer from "@/components/Footer";
-import "../styles/globals.css";
-import Navbar from "@/components/Navbar";
-import { ThemeProvider } from "next-themes";
+import Footer from '@/components/Footer';
+import '../styles/globals.css';
+import Navbar from '@/components/Navbar';
+import { ThemeProvider } from 'next-themes';
 
 /* export const metadata = {
   title: "Create Next App",
@@ -11,17 +11,16 @@ import { ThemeProvider } from "next-themes";
 }; */
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <head/>
-      <body className="dark:bg-stone-900">
-        <ThemeProvider enableSystem={true} attribute="class">
-          <Navbar/>
-          {children}
-          <Footer />
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en" suppressHydrationWarning>
+			<head />
+			<body className="dark:bg-stone-900">
+				<ThemeProvider enableSystem={true} attribute="class">
+					<Navbar />
+					{children}
+					<Footer />
+				</ThemeProvider>
+			</body>
+		</html>
+	);
 }
-
