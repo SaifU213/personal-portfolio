@@ -10,7 +10,7 @@
 		"deploy": "next build && gh-pages -d out"
 	},
 	"dependencies": {
-		"next": "^15.5.4",
+		"next": "^16.1.5",
 		"next-themes": "^0.3.0",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
